@@ -5,7 +5,7 @@ function Hero() {
     return (
         <section className={classes.hero}>
             <div className={classes.image}>
-                <Image src="/images/site/hamad.jpg"
+                <Image src="/images/site/hamad.png"
                     alt="An image showing hamad"
                     width={300}
                     height={300}
