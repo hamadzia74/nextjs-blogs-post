@@ -1,4 +1,5 @@
 import PostHeader from "./post-header";
+import classes from './post-content.module.css'
 
 const DUMMY_POSTS = {
     slug: 'getting-started-with-nextjs',
@@ -11,9 +12,9 @@ function PostContent() {
     const imagePath = `/images/posts/${DUMMY_POSTS.slug}/${DUMMY_POSTS.image}`;
 
     return (
-        <article>
+        <article className={classes.content}>
             <PostHeader title={DUMMY_POSTS.title} image={imagePath} />
-            CONTENT
+            {DUMMY_POSTS.content}
         </article>
     )
 }
