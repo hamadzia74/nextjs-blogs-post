@@ -8,7 +8,7 @@ function AllPostsPage(props) {
 }
 
 export function getStaticProps() {
-    const featuredPosts = getAllPosts();
+    const allPosts = getAllPosts();
     return {
         props: {
             posts: allPosts
